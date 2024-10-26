@@ -1,4 +1,4 @@
-hincrby# HELP php_info Information about the PHP environment.
+# HELP php_info Information about the PHP environment.
 # TYPE php_info gauge
 php_info{version="8.1.29"} 1
 # HELP vdevs_db_version Database version
