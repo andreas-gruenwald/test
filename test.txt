@@ -1,0 +1,147 @@
+hincrby# HELP php_info Information about the PHP environment.
+# TYPE php_info gauge
+php_info{version="8.1.29"} 1
+# HELP vdevs_db_version Database version
+# TYPE vdevs_db_version gauge
+vdevs_db_version 10.0521
+# HELP vdevs_domain_certificate Domain certification validity check
+# TYPE vdevs_domain_certificate gauge
+vdevs_domain_certificate{domain="at-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="ba-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="bg-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="com-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="cz-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="dipa-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="hr-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="https://dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="hu-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="mvh-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="pb-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="pl-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="ro-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="rs-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="si-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="sk-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="ua-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+vdevs_domain_certificate{domain="wt-dev-myhost.elements.zone",reason="Invalid certificate. PHP error.",valid_from="",valid_to=""} 0
+# HELP vdevs_messenger_count Number of total Pimcore orders that have been committed.
+# TYPE vdevs_messenger_count gauge
+vdevs_messenger_count{queue="app_default",countable="true"} 0
+vdevs_messenger_count{queue="elements_backend_iterator",countable="false"} 0
+vdevs_messenger_count{queue="elements_process_manager",countable="false"} 0
+vdevs_messenger_count{queue="pimcore_core",countable="true"} 5622
+vdevs_messenger_count{queue="pimcore_data_import",countable="true"} 0
+vdevs_messenger_count{queue="pimcore_image_optimize",countable="true"} 0
+vdevs_messenger_count{queue="pimcore_maintenance",countable="true"} 0
+# HELP vdevs_pimcore_cli_command_terminations TotalPimcore command terminations.
+# TYPE vdevs_pimcore_cli_command_terminations counter
+vdevs_pimcore_cli_command_terminations{name="vdevs:metrics:clear",error=""} 1
+vdevs_pimcore_cli_command_terminations{name="vdevs:metrics:collect",error=""} 1
+# HELP vdevs_pimcore_cli_job_durations_histogram_seconds Pimcore CLI job durations in seconds
+# TYPE vdevs_pimcore_cli_job_durations_histogram_seconds histogram
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="0.0050000000000000001"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="0.01"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="0.025000000000000001"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="0.050000000000000003"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="0.074999999999999997"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="0.10000000000000001"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="0.25"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="0.5"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="0.75"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="1"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="2.5"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="5"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="7.5"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="10"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="all",le="+Inf"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_count{name="all"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_sum{name="all"} 0.273030757904054
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="0.0050000000000000001"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="0.01"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="0.025000000000000001"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="0.050000000000000003"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="0.074999999999999997"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="0.10000000000000001"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="0.25"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="0.5"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="0.75"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="1"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="2.5"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="5"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="7.5"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="10"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_clear",le="+Inf"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_count{name="pimcore_cli_vdevs_metrics_clear"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_sum{name="pimcore_cli_vdevs_metrics_clear"} 0.017791986465454
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="0.0050000000000000001"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="0.01"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="0.025000000000000001"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="0.050000000000000003"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="0.074999999999999997"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="0.10000000000000001"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="0.25"} 0
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="0.5"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="0.75"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="1"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="2.5"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="5"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="7.5"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="10"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_bucket{name="pimcore_cli_vdevs_metrics_collect",le="+Inf"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_count{name="pimcore_cli_vdevs_metrics_collect"} 1
+vdevs_pimcore_cli_job_durations_histogram_seconds_sum{name="pimcore_cli_vdevs_metrics_collect"} 0.2552387714386
+# HELP vdevs_pimcore_cli_total Total Pimcore command calls.
+# TYPE vdevs_pimcore_cli_total counter
+vdevs_pimcore_cli_total{name="all"} 1
+vdevs_pimcore_cli_total{name="vdevs:metrics:collect"} 1
+# HELP vdevs_pimcore_cli_vdevs_metrics_clear Pimcore Command 
+# TYPE vdevs_pimcore_cli_vdevs_metrics_clear gauge
+vdevs_pimcore_cli_vdevs_metrics_clear 0
+# HELP vdevs_pimcore_cli_vdevs_metrics_clear_last_duration Pimcore Command last duration
+# TYPE vdevs_pimcore_cli_vdevs_metrics_clear_last_duration gauge
+vdevs_pimcore_cli_vdevs_metrics_clear_last_duration 0.017791986465454
+# HELP vdevs_pimcore_cli_vdevs_metrics_collect Pimcore Command 
+# TYPE vdevs_pimcore_cli_vdevs_metrics_collect gauge
+vdevs_pimcore_cli_vdevs_metrics_collect 0
+# HELP vdevs_pimcore_cli_vdevs_metrics_collect_last_duration Pimcore Command last duration
+# TYPE vdevs_pimcore_cli_vdevs_metrics_collect_last_duration gauge
+vdevs_pimcore_cli_vdevs_metrics_collect_last_duration 0.2552387714386
+# HELP vdevs_pimcore_table Pimcore database table
+# TYPE vdevs_pimcore_table gauge
+vdevs_pimcore_table{name="app_event_registration"} 234
+vdevs_pimcore_table{name="app_pricing_rule_group"} 76
+vdevs_pimcore_table{name="app_webhooks"} 323
+vdevs_pimcore_table{name="assets"} 328677
+vdevs_pimcore_table{name="bundle_data_hub_data_importer_queue"} 0
+vdevs_pimcore_table{name="documents"} 4458
+vdevs_pimcore_table{name="ecommerceframework_productindex_store"} 0
+vdevs_pimcore_table{name="ecommerceframework_productindex_store_elastic"} 35284
+vdevs_pimcore_table{name="email_log"} 145960
+vdevs_pimcore_table{name="entity_article_number_mapping"} 889
+vdevs_pimcore_table{name="entity_condition"} 159
+vdevs_pimcore_table{name="entity_import_article_hash"} 70778
+vdevs_pimcore_table{name="entity_material_group"} 54700
+vdevs_pimcore_table{name="entity_order_tasks_report"} 10136
+vdevs_pimcore_table{name="entity_price"} 44
+vdevs_pimcore_table{name="entity_pricelist_item"} 123347
+vdevs_pimcore_table{name="entity_product_hierarchy"} 9017
+vdevs_pimcore_table{name="entity_region_factory_data"} 1873617
+vdevs_pimcore_table{name="entity_xml_pricelist_queue_entry"} 0
+vdevs_pimcore_table{name="objects"} 520163
+vdevs_pimcore_table{name="plugin_cmf_actiontrigger_queue"} 0
+vdevs_pimcore_table{name="plugin_cmf_newsletter_queue"} 0
+vdevs_pimcore_table{name="plugin_cmf_segment_assignment_queue"} 0
+vdevs_pimcore_table{name="plugin_cmf_segmentbuilder_changes_queue"} 18427
+vdevs_pimcore_table{name="recyclebin"} 6186
+vdevs_pimcore_table{name="versions"} 2441
+# HELP vdevs_pimcore_total_orders Number of total Pimcore orders that have been committed.
+# TYPE vdevs_pimcore_total_orders gauge
+vdevs_pimcore_total_orders 89210
+# HELP vdevs_pimcore_version Pimcore version
+# TYPE vdevs_pimcore_version gauge
+vdevs_pimcore_version 10.0515
+# HELP vdevs_running_commands Running Commands
+# TYPE vdevs_running_commands gauge
+vdevs_running_commands{name="php bin/console vdevs:me:co",status="running"} 1
+vdevs_running_commands{name="php bin/console vdevs:metrics:co",status="inactive"} 0
+vdevs_running_commands{name="php-fpm: master process (/etc/php/8.1/fpm/php-fpm.conf)",status="running"} 1
